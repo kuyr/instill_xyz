@@ -1,0 +1,33 @@
+{
+  "name": "instill",
+  "version": "1.0.0",
+  "description": "a take home test for instill",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "test": "npx wdio wdio.conf.js --spec ./test/specs/xyzbank.spec.js",
+    "generate_report": "npx allure generate allure-results --clean && npx allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuyr/sora_union.git"
+  },
+  "author": "emmanuel kuye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuyr/sora_union/issues"
+  },
+  "homepage": "https://github.com/kuyr/sora_union#readme",
+  "dependencies": {
+    "@wdio/cli": "^8.22.1",
+    "chai": "^5.1.0",
+    "selenium-webdriver": "^4.15.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.21.0",
+    "@wdio/local-runner": "^8.22.1",
+    "@wdio/mocha-framework": "^8.22.0",
+    "@wdio/spec-reporter": "^8.21.0",
+    "webdriverio": "^8.22.1"
+  }
+}
