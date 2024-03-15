@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuyr/sora_union.git"
+    "url": "git+https://github.com/kuyr/instill_xyz.git"
   },
   "author": "emmanuel kuye",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kuyr/sora_union/issues"
+    "url": "https://github.com/kuyr/instill_xyz/issues"
   },
-  "homepage": "https://github.com/kuyr/sora_union#readme",
+  "homepage": "https://github.com/kuyr/instill_xyz#readme",
   "dependencies": {
     "@wdio/cli": "^8.22.1",
     "chai": "^5.1.0",

@@ -1,4 +1,4 @@
-# Sora Union take-home test
+# Instill take-home test
 
 This repository contains automated test scripts for the take-home assignment using WebdriverIO, Selenium, and JavaScript.
 
@@ -17,21 +17,21 @@ Before you begin, ensure you have met the following requirements:
 - [Node.js](https://nodejs.org/) installed
 - [WebDriver](https://webdriver.io/) or other relevant dependencies installed
 - A compatible web browser (e.g., Chrome, Firefox)
-- The [web application](https://katalon-demo-cura.herokuapp.com/) up and running
+- The [web application](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login) up and running
 
 ## Installation
 
 1. Clone this repository:
 
 ```sh
-git clone https://github.com/kuyr/sora_union.git
+git clone https://github.com/kuyr/instill_xyz.git
 
 ```
 
 2. Change to the project directory and install dependencies
 
 ```sh
-   cd sora_union
+   cd instill
 
    npm install
 ```
@@ -49,9 +49,7 @@ To run all the tests use this command:
 To run the individual tests use these commands:
 
 ```bash
-      npm run login_test
-
-      npm run appointments_test
+      npm run test
 
 ```
 
