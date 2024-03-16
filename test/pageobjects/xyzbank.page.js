@@ -1,4 +1,4 @@
-class LoginPage {
+class TransactionPage {
   get customerLoginBtn() {
     return $("button[ng-click='customer()']");
   }
@@ -93,4 +93,4 @@ class LoginPage {
   }
 }
 
-module.exports = new LoginPage();
+module.exports = new TransactionPage();

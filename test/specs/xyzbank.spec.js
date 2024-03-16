@@ -1,4 +1,4 @@
-const LoginPage = require("../pageobjects/xyzbank.page");
+const TransactionPage = require("../pageobjects/xyzbank.page");
 
 describe("Transaction validation", () => {
   const valid_username = "Hermoine Granger";
@@ -8,24 +8,24 @@ describe("Transaction validation", () => {
   const invalid_day = "Jan 7, 2029 12:00:00 AM";
 
   beforeEach(async () => {
-    await LoginPage.open();
-    await LoginPage.customerLoginBtn.click();
-    await LoginPage.usernameDropdown.selectByVisibleText(valid_username);
-    await LoginPage.loginBtn.click();
+    await TransactionPage.open();
+    await TransactionPage.customerLoginBtn.click();
+    await TransactionPage.usernameDropdown.selectByVisibleText(valid_username);
+    await TransactionPage.loginBtn.click();
   });
   afterEach(async () => {
-    await LoginPage.logoutBtn.click();
+    await TransactionPage.logoutBtn.click();
   });
 
   it("should login and validate transaction for a given amount on a given day", async () => {
-    await LoginPage.transactionsBtn.click();
-    const transactionExist = await LoginPage.isTransactionExist(amount, day);
+    await TransactionPage.transactionsBtn.click();
+    const transactionExist = await TransactionPage.isTransactionExist(amount, day);
     expect(transactionExist).toBe(true);
   });
 
   it("should login and validate transaction for a given amount does not exist on a given day", async () => {
-    await LoginPage.transactionsBtn.click();
-    const transactionExist = await LoginPage.isTransactionExist(
+    await TransactionPage.transactionsBtn.click();
+    const transactionExist = await TransactionPage.isTransactionExist(
       invalid_amount,
       invalid_day
     );
