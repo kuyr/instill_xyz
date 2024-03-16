@@ -1,6 +1,6 @@
 const LoginPage = require("../pageobjects/xyzbank.page");
 
-describe("Login Workflow", () => {
+describe("Transaction validation", () => {
   const valid_username = "Hermoine Granger";
   const amount = "30";
   const day = "Jan 2, 2015 12:00:00 AM";
