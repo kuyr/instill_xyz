@@ -67,6 +67,6 @@ The project follows a standard structure:
 To generate a beautiful report after running the tests:
 
 ```bash
-      npm run report_generate
+      npm run generate_report
 
 ```
